@@ -50,9 +50,15 @@ jobs:
         if: steps.base-cache.outputs.cache-hit != 'true'
         run: |
           npm install -g apkmirror-downloader@2.0.11
-          apkmd download tiktok-pte-ltd tik-tok-including-musical-ly \
-            --version 47.7.3 --arch arm64-v8a --dpi nodpi --type apk \
-            --outfile tiktok.apk
+          # the published cli has no shebang: invoke it with node directly
+          CLI="$(npm root -g)/apkmirror-downloader/dist/cli.js"
+          for attempt in 1 2 3; do
+            echo "APKMirror attempt $attempt"
+            node "$CLI" download tiktok-pte-ltd tik-tok-including-musical-ly \
+              --version 47.7.3 --arch arm64-v8a --dpi nodpi --type apk \
+              --outfile tiktok.apk && test -s tiktok.apk && break
+            sleep 20
+          done
           test -s tiktok.apk
 
       - name: Verify base APK
