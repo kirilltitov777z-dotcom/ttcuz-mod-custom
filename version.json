@@ -1,0 +1,8 @@
+{
+  "version": "0.9.5",
+  "channel": "testing",
+  "url": "",
+  "url_armv7": "",
+  "notes": "Cold start shows ttcuz, profile music search and folding player, music button on your own profile right away, Telegram profile verification, relative video dates, deleted messages kept in the background, A/B flags in Tools, fewer server requests",
+  "notes_ru": "Холодный старт показывает ttcuz, поиск треков и сворачиваемый плеер в музыке профиля, кнопка музыки в своём профиле сразу, подтверждение профиля через Telegram, даты видео «вчера» и «N часов назад», удалённые сообщения сохраняются и в фоне, флаги A/B в «Инструментах», меньше запросов к серверу"
+}

@@ -1,0 +1,94 @@
+name: Build ttcuz mod APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Check out sources
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache downloaded toolchain
+        uses: actions/cache@v4
+        with:
+          path: |
+            tools
+            ttcuzcache
+          key: ttcuz-tools-${{ runner.os }}-v1
+
+      - name: Cache the official TikTok base APK
+        id: base-cache
+        uses: actions/cache@v4
+        with:
+          path: tiktok.apk
+          key: tiktok-47.7.3-arm64-nodpi-apk-v1
+
+      - name: Download TikTok 47.7.3 (arm64, nodpi)
+        if: steps.base-cache.outputs.cache-hit != 'true'
+        run: |
+          npm install -g apkmirror-downloader@2.0.11
+          apkmd download tiktok-pte-ltd tik-tok-including-musical-ly \
+            --version 47.7.3 --arch arm64-v8a --dpi nodpi --type apk \
+            --outfile tiktok.apk
+          test -s tiktok.apk
+
+      - name: Verify base APK
+        run: |
+          ls -lh tiktok.apk
+          echo "SHA-256 of the base APK:"
+          sha256sum tiktok.apk
+
+      - name: Build the mod
+        run: |
+          python3 -m ttcuz tiktok.apk \
+            --out build/ttcuz-mod.apk \
+            --abi arm64
+
+      - name: Name the release file
+        run: |
+          cp build/ttcuz-mod.apk ttcuz-mod-0.9.5.apk
+          ls -lh ttcuz-mod-0.9.5.apk
+
+      - name: Upload APK as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ttcuz-mod
+          path: ttcuz-mod-0.9.5.apk
+          if-no-files-found: error
+
+      - name: Publish a release with the APK
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: mod-0.9.5-${{ github.run_number }}
+          name: ttcuz mod 0.9.5 (build #${{ github.run_number }})
+          body: |
+            Сборка мода ttcuz 0.9.5 на базе TikTok 47.7.3.
+
+            - новая иконка («tt» с градиентом);
+            - готовых тем: 6 вместо 2;
+            - стилей иконок: 70 вместо 22.
+          files: ttcuz-mod-0.9.5.apk
+          generate_release_notes: false

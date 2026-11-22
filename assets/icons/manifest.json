@@ -1,0 +1,872 @@
+{
+  "schemaVersion": 1,
+  "icons": [
+    {
+      "id": "ttcuz",
+      "label": "ttcuz",
+      "default": true,
+      "icon": "ttcuz/icon.png",
+      "adaptive": {
+        "foreground": "ttcuz/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "ttcuz/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "relief",
+      "label": "Relief",
+      "default": false,
+      "icon": "relief/icon.png",
+      "adaptive": {
+        "foreground": "relief/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "relief/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "violet",
+      "label": "Violet",
+      "default": false,
+      "icon": "violet/icon.png",
+      "adaptive": {
+        "foreground": "violet/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "violet/monochrome.png",
+        "backgroundColor": "#572F89"
+      }
+    },
+    {
+      "id": "pixels",
+      "label": "Pixels",
+      "default": false,
+      "icon": "pixels/icon.png",
+      "adaptive": {
+        "foreground": "pixels/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "pixels/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "glitch",
+      "label": "Glitch",
+      "default": false,
+      "icon": "glitch/icon.png",
+      "adaptive": {
+        "foreground": "glitch/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "glitch/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "accent",
+      "label": "Accent",
+      "default": false,
+      "hue": 270,
+      "icon": "accent/icon.png",
+      "adaptive": {
+        "foreground": "accent/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent/monochrome.png",
+        "backgroundColor": "#5E2F8E"
+      }
+    },
+    {
+      "id": "accent_h00",
+      "label": "Accent",
+      "default": false,
+      "auto": true,
+      "hue": 0,
+      "icon": "accent_h00/icon.png",
+      "adaptive": {
+        "foreground": "accent_h00/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent_h00/monochrome.png",
+        "backgroundColor": "#8E2F2F"
+      }
+    },
+    {
+      "id": "accent_h01",
+      "label": "Accent",
+      "default": false,
+      "auto": true,
+      "hue": 30,
+      "icon": "accent_h01/icon.png",
+      "adaptive": {
+        "foreground": "accent_h01/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent_h01/monochrome.png",
+        "backgroundColor": "#8E5E2F"
+      }
+    },
+    {
+      "id": "accent_h02",
+      "label": "Accent",
+      "default": false,
+      "auto": true,
+      "hue": 60,
+      "icon": "accent_h02/icon.png",
+      "adaptive": {
+        "foreground": "accent_h02/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent_h02/monochrome.png",
+        "backgroundColor": "#8E8E2F"
+      }
+    },
+    {
+      "id": "accent_h03",
+      "label": "Accent",
+      "default": false,
+      "auto": true,
+      "hue": 90,
+      "icon": "accent_h03/icon.png",
+      "adaptive": {
+        "foreground": "accent_h03/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent_h03/monochrome.png",
+        "backgroundColor": "#5E8E2F"
+      }
+    },
+    {
+      "id": "accent_h04",
+      "label": "Accent",
+      "default": false,
+      "auto": true,
+      "hue": 120,
+      "icon": "accent_h04/icon.png",
+      "adaptive": {
+        "foreground": "accent_h04/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent_h04/monochrome.png",
+        "backgroundColor": "#2F8E2F"
+      }
+    },
+    {
+      "id": "accent_h05",
+      "label": "Accent",
+      "default": false,
+      "auto": true,
+      "hue": 150,
+      "icon": "accent_h05/icon.png",
+      "adaptive": {
+        "foreground": "accent_h05/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent_h05/monochrome.png",
+        "backgroundColor": "#2F8E5E"
+      }
+    },
+    {
+      "id": "accent_h06",
+      "label": "Accent",
+      "default": false,
+      "auto": true,
+      "hue": 180,
+      "icon": "accent_h06/icon.png",
+      "adaptive": {
+        "foreground": "accent_h06/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent_h06/monochrome.png",
+        "backgroundColor": "#2F8E8E"
+      }
+    },
+    {
+      "id": "accent_h07",
+      "label": "Accent",
+      "default": false,
+      "auto": true,
+      "hue": 210,
+      "icon": "accent_h07/icon.png",
+      "adaptive": {
+        "foreground": "accent_h07/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent_h07/monochrome.png",
+        "backgroundColor": "#2F5E8E"
+      }
+    },
+    {
+      "id": "accent_h08",
+      "label": "Accent",
+      "default": false,
+      "auto": true,
+      "hue": 240,
+      "icon": "accent_h08/icon.png",
+      "adaptive": {
+        "foreground": "accent_h08/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent_h08/monochrome.png",
+        "backgroundColor": "#2F2F8E"
+      }
+    },
+    {
+      "id": "accent_h09",
+      "label": "Accent",
+      "default": false,
+      "auto": true,
+      "hue": 270,
+      "icon": "accent_h09/icon.png",
+      "adaptive": {
+        "foreground": "accent_h09/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent_h09/monochrome.png",
+        "backgroundColor": "#5E2F8E"
+      }
+    },
+    {
+      "id": "accent_h10",
+      "label": "Accent",
+      "default": false,
+      "auto": true,
+      "hue": 300,
+      "icon": "accent_h10/icon.png",
+      "adaptive": {
+        "foreground": "accent_h10/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent_h10/monochrome.png",
+        "backgroundColor": "#8E2F8E"
+      }
+    },
+    {
+      "id": "accent_h11",
+      "label": "Accent",
+      "default": false,
+      "auto": true,
+      "hue": 330,
+      "icon": "accent_h11/icon.png",
+      "adaptive": {
+        "foreground": "accent_h11/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent_h11/monochrome.png",
+        "backgroundColor": "#8E2F5E"
+      }
+    },
+    {
+      "id": "accent_gray",
+      "label": "Accent",
+      "default": false,
+      "auto": true,
+      "hue": -1,
+      "icon": "accent_gray/icon.png",
+      "adaptive": {
+        "foreground": "accent_gray/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "accent_gray/monochrome.png",
+        "backgroundColor": "#645959"
+      }
+    },
+    {
+      "id": "instacuz",
+      "label": "Instacuz",
+      "default": false,
+      "icon": "instacuz/icon.png",
+      "adaptive": {
+        "foreground": "instacuz/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "instacuz/monochrome.png",
+        "backgroundColor": "#17191D"
+      }
+    },
+    {
+      "id": "ios26",
+      "label": "iOS 26",
+      "default": false,
+      "icon": "ios26/icon.png",
+      "adaptive": {
+        "foreground": "ios26/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "ios26/monochrome.png",
+        "backgroundColor": "#17191D"
+      }
+    },
+    {
+      "id": "sunshine",
+      "label": "Sun",
+      "default": false,
+      "icon": "sunshine/icon.png",
+      "adaptive": {
+        "foreground": "sunshine/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "sunshine/monochrome.png",
+        "backgroundColor": "#17191D"
+      }
+    },
+    {
+      "id": "pixel",
+      "label": "Pixel",
+      "default": false,
+      "icon": "pixel/icon.png",
+      "adaptive": {
+        "foreground": "pixel/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "pixel/monochrome.png",
+        "backgroundColor": "#17191D"
+      }
+    },
+    {
+      "id": "sketch",
+      "label": "Sketch",
+      "default": false,
+      "icon": "sketch/icon.png",
+      "adaptive": {
+        "foreground": "sketch/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "sketch/monochrome.png",
+        "backgroundColor": "#17191D"
+      }
+    },
+    {
+      "id": "dots",
+      "label": "Dots",
+      "default": false,
+      "icon": "dots/icon.png",
+      "adaptive": {
+        "foreground": "dots/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "dots/monochrome.png",
+        "backgroundColor": "#17191D"
+      }
+    },
+    {
+      "id": "sparkle",
+      "label": "Sparkle",
+      "default": false,
+      "icon": "sparkle/icon.png",
+      "adaptive": {
+        "foreground": "sparkle/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "sparkle/monochrome.png",
+        "backgroundColor": "#17191D"
+      }
+    },
+    {
+      "id": "x_ttcuz_cyan",
+      "label": "ttcuz Cyan",
+      "default": false,
+      "icon": "x_ttcuz_cyan/icon.png",
+      "adaptive": {
+        "foreground": "x_ttcuz_cyan/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_ttcuz_cyan/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_ttcuz_pink",
+      "label": "ttcuz Pink",
+      "default": false,
+      "icon": "x_ttcuz_pink/icon.png",
+      "adaptive": {
+        "foreground": "x_ttcuz_pink/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_ttcuz_pink/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_ttcuz_gold",
+      "label": "ttcuz Gold",
+      "default": false,
+      "icon": "x_ttcuz_gold/icon.png",
+      "adaptive": {
+        "foreground": "x_ttcuz_gold/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_ttcuz_gold/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_ttcuz_green",
+      "label": "ttcuz Green",
+      "default": false,
+      "icon": "x_ttcuz_green/icon.png",
+      "adaptive": {
+        "foreground": "x_ttcuz_green/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_ttcuz_green/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_relief_teal",
+      "label": "Relief Teal",
+      "default": false,
+      "icon": "x_relief_teal/icon.png",
+      "adaptive": {
+        "foreground": "x_relief_teal/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_relief_teal/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_relief_rose",
+      "label": "Relief Rose",
+      "default": false,
+      "icon": "x_relief_rose/icon.png",
+      "adaptive": {
+        "foreground": "x_relief_rose/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_relief_rose/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_relief_gold",
+      "label": "Relief Gold",
+      "default": false,
+      "icon": "x_relief_gold/icon.png",
+      "adaptive": {
+        "foreground": "x_relief_gold/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_relief_gold/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_relief_mint",
+      "label": "Relief Mint",
+      "default": false,
+      "icon": "x_relief_mint/icon.png",
+      "adaptive": {
+        "foreground": "x_relief_mint/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_relief_mint/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_violet_ocean",
+      "label": "Violet Ocean",
+      "default": false,
+      "icon": "x_violet_ocean/icon.png",
+      "adaptive": {
+        "foreground": "x_violet_ocean/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_violet_ocean/monochrome.png",
+        "backgroundColor": "#3C892F"
+      }
+    },
+    {
+      "id": "x_violet_peach",
+      "label": "Violet Peach",
+      "default": false,
+      "icon": "x_violet_peach/icon.png",
+      "adaptive": {
+        "foreground": "x_violet_peach/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_violet_peach/monochrome.png",
+        "backgroundColor": "#722F89"
+      }
+    },
+    {
+      "id": "x_violet_lime",
+      "label": "Violet Lime",
+      "default": false,
+      "icon": "x_violet_lime/icon.png",
+      "adaptive": {
+        "foreground": "x_violet_lime/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_violet_lime/monochrome.png",
+        "backgroundColor": "#89322F"
+      }
+    },
+    {
+      "id": "x_violet_ruby",
+      "label": "Violet Ruby",
+      "default": false,
+      "icon": "x_violet_ruby/icon.png",
+      "adaptive": {
+        "foreground": "x_violet_ruby/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_violet_ruby/monochrome.png",
+        "backgroundColor": "#482F89"
+      }
+    },
+    {
+      "id": "x_pixels_coral",
+      "label": "Pixels Coral",
+      "default": false,
+      "icon": "x_pixels_coral/icon.png",
+      "adaptive": {
+        "foreground": "x_pixels_coral/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_pixels_coral/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_pixels_sky",
+      "label": "Pixels Sky",
+      "default": false,
+      "icon": "x_pixels_sky/icon.png",
+      "adaptive": {
+        "foreground": "x_pixels_sky/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_pixels_sky/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_pixels_amber",
+      "label": "Pixels Amber",
+      "default": false,
+      "icon": "x_pixels_amber/icon.png",
+      "adaptive": {
+        "foreground": "x_pixels_amber/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_pixels_amber/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_pixels_mint",
+      "label": "Pixels Mint",
+      "default": false,
+      "icon": "x_pixels_mint/icon.png",
+      "adaptive": {
+        "foreground": "x_pixels_mint/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_pixels_mint/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_glitch_neon",
+      "label": "Glitch Neon",
+      "default": false,
+      "icon": "x_glitch_neon/icon.png",
+      "adaptive": {
+        "foreground": "x_glitch_neon/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_glitch_neon/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_glitch_dusk",
+      "label": "Glitch Dusk",
+      "default": false,
+      "icon": "x_glitch_dusk/icon.png",
+      "adaptive": {
+        "foreground": "x_glitch_dusk/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_glitch_dusk/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_glitch_blaze",
+      "label": "Glitch Blaze",
+      "default": false,
+      "icon": "x_glitch_blaze/icon.png",
+      "adaptive": {
+        "foreground": "x_glitch_blaze/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_glitch_blaze/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_glitch_ice",
+      "label": "Glitch Ice",
+      "default": false,
+      "icon": "x_glitch_ice/icon.png",
+      "adaptive": {
+        "foreground": "x_glitch_ice/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_glitch_ice/monochrome.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    {
+      "id": "x_pixel_berry",
+      "label": "Pixel Berry",
+      "default": false,
+      "icon": "x_pixel_berry/icon.png",
+      "adaptive": {
+        "foreground": "x_pixel_berry/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_pixel_berry/monochrome.png",
+        "backgroundColor": "#0E2226"
+      }
+    },
+    {
+      "id": "x_pixel_cobalt",
+      "label": "Pixel Cobalt",
+      "default": false,
+      "icon": "x_pixel_cobalt/icon.png",
+      "adaptive": {
+        "foreground": "x_pixel_cobalt/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_pixel_cobalt/monochrome.png",
+        "backgroundColor": "#1E260E"
+      }
+    },
+    {
+      "id": "x_pixel_lemon",
+      "label": "Pixel Lemon",
+      "default": false,
+      "icon": "x_pixel_lemon/icon.png",
+      "adaptive": {
+        "foreground": "x_pixel_lemon/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_pixel_lemon/monochrome.png",
+        "backgroundColor": "#1E0E26"
+      }
+    },
+    {
+      "id": "x_pixel_forest",
+      "label": "Pixel Forest",
+      "default": false,
+      "icon": "x_pixel_forest/icon.png",
+      "adaptive": {
+        "foreground": "x_pixel_forest/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_pixel_forest/monochrome.png",
+        "backgroundColor": "#260E12"
+      }
+    },
+    {
+      "id": "x_sketch_rose",
+      "label": "Sketch Rose",
+      "default": false,
+      "icon": "x_sketch_rose/icon.png",
+      "adaptive": {
+        "foreground": "x_sketch_rose/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_sketch_rose/monochrome.png",
+        "backgroundColor": "#0E1E26"
+      }
+    },
+    {
+      "id": "x_sketch_teal",
+      "label": "Sketch Teal",
+      "default": false,
+      "icon": "x_sketch_teal/icon.png",
+      "adaptive": {
+        "foreground": "x_sketch_teal/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_sketch_teal/monochrome.png",
+        "backgroundColor": "#261C0E"
+      }
+    },
+    {
+      "id": "x_sketch_violet",
+      "label": "Sketch Violet",
+      "default": false,
+      "icon": "x_sketch_violet/icon.png",
+      "adaptive": {
+        "foreground": "x_sketch_violet/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_sketch_violet/monochrome.png",
+        "backgroundColor": "#0E2616"
+      }
+    },
+    {
+      "id": "x_sketch_sand",
+      "label": "Sketch Sand",
+      "default": false,
+      "icon": "x_sketch_sand/icon.png",
+      "adaptive": {
+        "foreground": "x_sketch_sand/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_sketch_sand/monochrome.png",
+        "backgroundColor": "#160E26"
+      }
+    },
+    {
+      "id": "x_dots_cyan",
+      "label": "Dots Cyan",
+      "default": false,
+      "icon": "x_dots_cyan/icon.png",
+      "adaptive": {
+        "foreground": "x_dots_cyan/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_dots_cyan/monochrome.png",
+        "backgroundColor": "#26200E"
+      }
+    },
+    {
+      "id": "x_dots_pink",
+      "label": "Dots Pink",
+      "default": false,
+      "icon": "x_dots_pink/icon.png",
+      "adaptive": {
+        "foreground": "x_dots_pink/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_dots_pink/monochrome.png",
+        "backgroundColor": "#0E2426"
+      }
+    },
+    {
+      "id": "x_dots_gold",
+      "label": "Dots Gold",
+      "default": false,
+      "icon": "x_dots_gold/icon.png",
+      "adaptive": {
+        "foreground": "x_dots_gold/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_dots_gold/monochrome.png",
+        "backgroundColor": "#180E26"
+      }
+    },
+    {
+      "id": "x_dots_green",
+      "label": "Dots Green",
+      "default": false,
+      "icon": "x_dots_green/icon.png",
+      "adaptive": {
+        "foreground": "x_dots_green/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_dots_green/monochrome.png",
+        "backgroundColor": "#260E12"
+      }
+    },
+    {
+      "id": "x_sparkle_aurora",
+      "label": "Sparkle Aurora",
+      "default": false,
+      "icon": "x_sparkle_aurora/icon.png",
+      "adaptive": {
+        "foreground": "x_sparkle_aurora/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_sparkle_aurora/monochrome.png",
+        "backgroundColor": "#26160E"
+      }
+    },
+    {
+      "id": "x_sparkle_magenta",
+      "label": "Sparkle Magenta",
+      "default": false,
+      "icon": "x_sparkle_magenta/icon.png",
+      "adaptive": {
+        "foreground": "x_sparkle_magenta/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_sparkle_magenta/monochrome.png",
+        "backgroundColor": "#0E2622"
+      }
+    },
+    {
+      "id": "x_sparkle_amber",
+      "label": "Sparkle Amber",
+      "default": false,
+      "icon": "x_sparkle_amber/icon.png",
+      "adaptive": {
+        "foreground": "x_sparkle_amber/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_sparkle_amber/monochrome.png",
+        "backgroundColor": "#140E26"
+      }
+    },
+    {
+      "id": "x_sparkle_blue",
+      "label": "Sparkle Blue",
+      "default": false,
+      "icon": "x_sparkle_blue/icon.png",
+      "adaptive": {
+        "foreground": "x_sparkle_blue/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_sparkle_blue/monochrome.png",
+        "backgroundColor": "#20260E"
+      }
+    },
+    {
+      "id": "x_ios26_cobalt",
+      "label": "iOS 26 Cobalt",
+      "default": false,
+      "icon": "x_ios26_cobalt/icon.png",
+      "adaptive": {
+        "foreground": "x_ios26_cobalt/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_ios26_cobalt/monochrome.png",
+        "backgroundColor": "#1E260E"
+      }
+    },
+    {
+      "id": "x_ios26_mint",
+      "label": "iOS 26 Mint",
+      "default": false,
+      "icon": "x_ios26_mint/icon.png",
+      "adaptive": {
+        "foreground": "x_ios26_mint/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_ios26_mint/monochrome.png",
+        "backgroundColor": "#26160E"
+      }
+    },
+    {
+      "id": "x_ios26_rose",
+      "label": "iOS 26 Rose",
+      "default": false,
+      "icon": "x_ios26_rose/icon.png",
+      "adaptive": {
+        "foreground": "x_ios26_rose/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_ios26_rose/monochrome.png",
+        "backgroundColor": "#0E1E26"
+      }
+    },
+    {
+      "id": "x_ios26_gold",
+      "label": "iOS 26 Gold",
+      "default": false,
+      "icon": "x_ios26_gold/icon.png",
+      "adaptive": {
+        "foreground": "x_ios26_gold/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_ios26_gold/monochrome.png",
+        "backgroundColor": "#180E26"
+      }
+    },
+    {
+      "id": "x_sunshine_sunset",
+      "label": "Sun Sunset",
+      "default": false,
+      "icon": "x_sunshine_sunset/icon.png",
+      "adaptive": {
+        "foreground": "x_sunshine_sunset/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_sunshine_sunset/monochrome.png",
+        "backgroundColor": "#0E0E26"
+      }
+    },
+    {
+      "id": "x_sunshine_violet",
+      "label": "Sun Violet",
+      "default": false,
+      "icon": "x_sunshine_violet/icon.png",
+      "adaptive": {
+        "foreground": "x_sunshine_violet/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_sunshine_violet/monochrome.png",
+        "backgroundColor": "#0E2616"
+      }
+    },
+    {
+      "id": "x_sunshine_aqua",
+      "label": "Sun Aqua",
+      "default": false,
+      "icon": "x_sunshine_aqua/icon.png",
+      "adaptive": {
+        "foreground": "x_sunshine_aqua/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_sunshine_aqua/monochrome.png",
+        "backgroundColor": "#261E0E"
+      }
+    },
+    {
+      "id": "x_sunshine_lime",
+      "label": "Sun Lime",
+      "default": false,
+      "icon": "x_sunshine_lime/icon.png",
+      "adaptive": {
+        "foreground": "x_sunshine_lime/foreground.png",
+        "foregroundFullBleed": true,
+        "monochrome": "x_sunshine_lime/monochrome.png",
+        "backgroundColor": "#260E22"
+      }
+    }
+  ]
+}
